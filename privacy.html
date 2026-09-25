@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy — Ghost Beat</title>
-    <meta name="description" content="Ghost Beat's privacy policy. Ghost Beat collects no personal data, uses no analytics or ads, and keeps practice data on your device.">
+    <title>Privacy Policy | Ghost Beat</title>
+    <meta name="description" content="How Ghost Beat handles local practice data, optional iCloud sync, microphone and MIDI input, purchases, and app-session analytics.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://ghostbeat.cc/privacy.html">
     <link rel="icon" type="image/png" href="https://ghostbeat.cc/favicon.png">
@@ -93,46 +93,51 @@
     <main class="container">
         <div class="eyebrow">Legal</div>
         <h1>Privacy Policy</h1>
-        <p class="updated">LAST UPDATED: MARCH 30, 2026</p>
+        <p class="updated">LAST UPDATED: SEPTEMBER 25, 2026</p>
 
-        <div class="tldr"><strong>The short version:</strong> Ghost Beat collects nothing. No accounts, no analytics, no ads, no servers. Everything stays on your device.</div>
+        <div class="tldr"><strong>The short version:</strong> Your playing stays yours. Ghost Beat does not record or upload microphone audio or MIDI performances. V3 adds optional private iCloud sync and app-session analytics through TelemetryDeck. There are no ads or advertising tracking.</div>
 
-        <h2>Overview</h2>
-        <p>Ghost Beat is designed with privacy in mind. We do not collect, store, or transmit any personal data. Everything stays on your device.</p>
+        <h2>Which version this covers</h2>
+        <p>This policy covers Ghost Beat, including the V3 update and its TestFlight builds. Features described as V3 apply when you install that version; this page does not mean V3 has been released on the App Store. V2 does not include V3's iCloud sync or TelemetryDeck integration.</p>
+        <p>You do not need a Ghost Beat account. Apple handles the Apple Account used for purchases and optional iCloud sync.</p>
 
-        <h2>Data Collection</h2>
-        <p>Ghost Beat does <strong>not</strong> collect any personal information. Specifically:</p>
-        <ul>
-            <li>No account or sign-up required</li>
-            <li>No analytics or tracking SDKs</li>
-            <li>No advertising</li>
-            <li>No data sent to any server</li>
-            <li>No cookies or web tracking</li>
-        </ul>
+        <h2>Your practice data</h2>
+        <p>Settings, routines, presets, practice history, timing results, daily goals, and notes are saved on your device. Ghost Beat can keep local recovery copies to protect data during updates or after a storage error. This practice content is not sent to our analytics service.</p>
 
-        <h2>Data Storage</h2>
-        <p>All app data — including your settings, presets, practice routines, and session history — is stored locally on your device using standard iOS/macOS storage (UserDefaults). This data is not accessible to us or any third party.</p>
+        <h2>Optional iCloud sync in V3</h2>
+        <p>Sync is off by default. If you enable it in Settings, Ghost Beat uses Apple's CloudKit service to store routines, presets, saved practice sessions (including notes and timing information), and your daily goal in your Apple Account's private iCloud database. This lets your devices share that library. It is not a public database or a developer-operated server, and we cannot browse other users' private libraries.</p>
+        <p>Microphone recordings, live audio, MIDI performances, microphone calibration, input choices, permissions, notification preferences, and purchase entitlements are not uploaded to this library. An account-specific iCloud identifier and sync metadata are used locally to keep the library attached to the right Apple Account.</p>
+        <p>Turning sync off stops future syncing but does not delete existing local or iCloud copies. To remove cloud data, turn sync off on all your devices first, then use Apple's iCloud storage controls for Ghost Beat. Otherwise a device can upload its local copy again. Ghost Beat does not currently offer an in-app button to erase the entire cloud library. Apple manages iCloud storage and retention under its <a href="https://www.apple.com/legal/privacy/">privacy policy</a>.</p>
 
-        <h2>In-App Purchases</h2>
-        <p>Ghost Beat offers an optional one-time in-app purchase (Ghost Beat Pro). Purchases are processed entirely through Apple's App Store. We do not receive or store any payment information. Purchase records are managed by your Apple ID.</p>
+        <h2>Microphone and connected instruments</h2>
+        <p>V3 can use microphone or connected audio input for Start on Sound, calibration, silence detection, and automatic practice tracking. Microphone permission is requested when needed. Incoming audio is analyzed live on the device, not saved as a recording or uploaded. Derived practice times and results can be saved in your history and synced if you enable iCloud.</p>
+        <p>You can also choose a connected MIDI instrument. MIDI note messages are processed on the device to detect playing; performances are not recorded or sent to analytics. These optional features can be turned off in the app, and microphone permission can be revoked in your device's privacy settings.</p>
+
+        <h2>App-session analytics in V3</h2>
+        <p>Ghost Beat uses <a href="https://telemetrydeck.com/privacy/">TelemetryDeck</a> to understand how often the app is used and which devices and app versions to support. It sends app-session start events, not a log of your drumming sessions, and does not measure practice duration through this analytics integration.</p>
+        <p>Events include a hashed device or installation identifier, a random session identifier, a timestamp, and technical metadata. This includes app version and build, operating system, device model and architecture, screen characteristics, language, locale, region, time zone, calendar information, interface and accessibility preferences, SDK version, and whether the build is from TestFlight, the App Store, a simulator, or a development run.</p>
+        <p>We do not send your name, email, Apple Account or iCloud identifier, routine or preset contents, notes, practice history or totals, microphone audio or levels, MIDI messages, input-device names, or purchase receipts to TelemetryDeck. No advertising identifier is used, and this data is not used for advertising tracking or linked by us to your real-world identity.</p>
+        <p>Signals can be queued on your device and sent over HTTPS when a connection is available. TelemetryDeck says it does not store IP addresses. Its current <a href="https://telemetrydeck.com/docs/guides/privacy-faq/">privacy FAQ</a> describes European hosting and says there is no fixed deletion schedule for stored analytics events; closing a TelemetryDeck organization account does not necessarily delete those events. We do not promise a shorter retention period.</p>
+        <p>Analytics is enabled in V3 and there is currently no in-app analytics switch. Turning off iCloud or microphone access does not turn off these separate app-session events. We do not sell analytics data or use it to track you across other companies' apps and websites.</p>
+
+        <h2>Ghost Beat Pro</h2>
+        <p>Pro is an optional one-time purchase, not a subscription. Apple processes payment and manages purchase history and restoration. Ghost Beat checks StoreKit transactions to determine whether Pro is unlocked. We do not receive your payment-card details, and the app does not upload purchase receipts to our own server or TelemetryDeck.</p>
 
         <h2>Notifications</h2>
-        <p>Ghost Beat may request permission to send local notifications for practice streak reminders and weekly summaries. These notifications are generated entirely on your device — no data is sent externally. You can disable notifications at any time in your device settings.</p>
+        <p>V3 can schedule local practice reminders and daily-goal completion alerts if you allow notifications. These are generated on your device. You can control them in Ghost Beat and your system notification settings.</p>
 
-        <h2>Microphone</h2>
-        <p>Ghost Beat does not access your microphone, camera, location, contacts, or any other device sensors.</p>
+        <h2>Retention and your choices</h2>
+        <p>You control your local library through the app's available delete and reset controls. With sync enabled, deletions are synced; recovery copies and sync deletion markers may remain to prevent data loss or deleted items returning. Turning off sync or deleting the app alone does not erase iCloud data. Device backups and iCloud copies are managed through Apple.</p>
+        <p>If you email support, we receive the address and information you choose to send, and use that correspondence to respond and resolve the request. Please avoid sending sensitive information or other people's practice data. Contact us about access, correction, or deletion requests. We do not have a Ghost Beat account directory or a way to identify your TelemetryDeck events from your name or email alone.</p>
 
-        <h2>Children's Privacy</h2>
-        <p>Ghost Beat does not collect any data from anyone, including children under 13. The app is safe for users of all ages.</p>
+        <h2>Younger users</h2>
+        <p>Ghost Beat does not ask for a name, date of birth, or contact details in the app. The V3 technical analytics described above apply regardless of age. A parent or guardian can contact us about privacy questions or information shared with support.</p>
 
-        <h2>Third-Party Services</h2>
-        <p>Ghost Beat does not integrate with any third-party services, analytics platforms, or advertising networks.</p>
+        <h2>This website</h2>
+        <p>Our hosting and content-delivery providers process normal web requests, such as IP address and browser information, to deliver and protect this site. The app's on-device audio processing and private library are separate from visiting the website.</p>
 
-        <h2>Changes to This Policy</h2>
-        <p>If this privacy policy changes, the updated version will be posted on this page with a new "Last updated" date.</p>
-
-        <h2>Contact</h2>
-        <p>If you have questions about this privacy policy, contact us at <a href="mailto:support@ghostbeat.cc">support@ghostbeat.cc</a>.</p>
+        <h2>Changes and contact</h2>
+        <p>We will update this page and its date if these practices change. For privacy questions, contact <a href="mailto:support@ghostbeat.cc">support@ghostbeat.cc</a>.</p>
     </main>
 
     <footer>
