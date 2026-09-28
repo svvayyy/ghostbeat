@@ -10,20 +10,20 @@
     <meta name="robots" content="index, follow">
     <meta name="google-site-verification" content="XDkvOHvKttFbGnutUKVoniFn0wK7_AF5vGTXlmziCcc">
     <link rel="canonical" href="https://ghostbeat.cc/">
-    <link rel="icon" type="image/png" href="favicon.png">
-    <link rel="apple-touch-icon" href="favicon.png">
+    <link rel="icon" type="image/png" href="favicon.png?v=3">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png?v=3">
 
     <meta property="og:title" content="Ghost Beat — The Metronome That Disappears">
     <meta property="og:description" content="Ghost bars force you to keep time without the click. Train your internal clock on iPhone & iPad.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://ghostbeat.cc/">
-    <meta property="og:image" content="https://ghostbeat.cc/icon.png">
+    <meta property="og:image" content="https://ghostbeat.cc/icon.png?v=3">
     <meta property="og:image:alt" content="Ghost Beat app icon">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Ghost Beat — The Metronome That Disappears">
     <meta name="twitter:description" content="Ghost bars force you to keep time without the click. Train your internal clock on iPhone & iPad.">
-    <meta name="twitter:image" content="https://ghostbeat.cc/icon.png">
+    <meta name="twitter:image" content="https://ghostbeat.cc/icon.png?v=3">
     <meta name="theme-color" content="#0a0a0a">
 
     <script type="application/ld+json">
@@ -389,7 +389,9 @@
             border-radius: 40px;
             overflow: hidden;
             box-shadow: 0 40px 90px rgba(0, 0, 0, 0.7), 0 0 70px rgba(255, 215, 0, 0.06);
-            aspect-ratio: 719 / 1440;
+            width: min(100%, calc((100svh - 120px) * 0.46025));
+            margin-inline: auto;
+            aspect-ratio: 1320 / 2868;
         }
         .phone-frame img {
             position: absolute; inset: 0; width: 100%; height: 100%;
@@ -433,7 +435,7 @@
             .carousel::-webkit-scrollbar { display: none; }
             .car-item { flex: 0 0 72%; max-width: 300px; scroll-snap-align: center; }
             .car-item img {
-                width: 100%; border-radius: 28px;
+                width: 100%; height: auto; border-radius: 28px;
                 box-shadow: 0 24px 60px rgba(0, 0, 0, 0.6);
             }
             .car-item figcaption { margin-top: 14px; text-align: center; }
@@ -551,7 +553,7 @@
 
     <nav id="nav" aria-label="Main">
         <a class="wordmark" href="#top">
-            <img src="favicon.png" alt="" width="28" height="28">
+            <img src="logo.png?v=3" alt="" width="28" height="28">
             <span><span class="ghost-g">GHOST</span> BEAT</span>
         </a>
         <a class="nav-cta" href="https://apps.apple.com/us/app/ghost-beat-timing-trainer/id6760374042">Get the app</a>
@@ -647,11 +649,11 @@
             <div class="show-grid">
                 <div class="phone-stick">
                     <div class="phone-frame" id="phoneFrame">
-                        <img src="shots/01_hero.png" class="on" alt="Ghost Beat player with jog wheel, beat pads, and 100 BPM display" data-shot="0">
-                        <img src="shots/02_ghost_bars.png" alt="Ghost Beat in a silent bar — beat pads dimmed red, 4 on / 4 off" data-shot="1" loading="lazy">
-                        <img src="shots/03_timing.png" alt="Timing Summary screen with 99% accuracy and an A grade" data-shot="2" loading="lazy">
-                        <img src="shots/05_routines.png" alt="Practice routines list with BPM steps per routine" data-shot="3" loading="lazy">
-                        <img src="shots/04_stats.png" alt="Practice Stats with charts, streaks and timing insights" data-shot="4" loading="lazy">
+                        <img width="1320" height="2868" src="shots/v3/01-player.png" class="on" alt="Ghost Beat v3 player with jog wheel, beat pads, and 90 BPM display" data-shot="0">
+                        <img width="1320" height="2868" src="shots/v3/07-ghost-bars.png" alt="Ghost Beat v3 in a silent bar with red beat pads, 2 on and 1 off" data-shot="1" loading="lazy">
+                        <img width="1320" height="2868" src="shots/v3/08-timing.png" alt="Ghost Beat v3 tap accuracy calibration in the player" data-shot="2" loading="lazy">
+                        <img width="1320" height="2868" src="shots/v3/04-routines.png" alt="Practice routines list with BPM steps per routine" data-shot="3" loading="lazy">
+                        <img width="1320" height="2868" src="shots/v3/05-home.png" alt="Ghost Beat v3 home with weekly practice, a daily goal, and a seven-day streak" data-shot="4" loading="lazy">
                     </div>
                 </div>
                 <div class="show-steps" id="showSteps">
@@ -664,8 +666,8 @@
                     <div class="show-step" data-shot="1">
                         <div class="eyebrow">Ghost bars</div>
                         <h3>Then the click walks out.</h3>
-                        <p>The pads turn red, the room goes quiet, and the tempo is yours to lose. Here: 80 BPM, four audible bars, four silent. Work up to one audible bar in eight — or let Random Mute drop single beats unpredictably.</p>
-                        <span class="chip">SILENT · 4 on / 4 off</span>
+                        <p>The pads turn red, the room goes quiet, and the tempo is yours to lose. Here: 90 BPM, two audible bars, one silent. Work up to one audible bar in eight — or let Random Mute drop single beats unpredictably.</p>
+                        <span class="chip">SILENT · 2 on / 1 off</span>
                     </div>
                     <div class="show-step" data-shot="2">
                         <div class="eyebrow">Tap accuracy</div>
@@ -682,8 +684,8 @@
                     <div class="show-step" data-shot="4">
                         <div class="eyebrow">Progress</div>
                         <h3>Proof you're getting better.</h3>
-                        <p>Streaks, session history, weekly charts, best grades and consistency trends — progress measured in timing terms, not just minutes on a clock.</p>
-                        <span class="chip">100% stored on-device</span>
+                        <p>See your daily goal, weekly practice and streak in one place. Pick up your last session or take on today’s challenge.</p>
+                        <span class="chip">Daily goals · weekly practice · streaks</span>
                     </div>
                 </div>
             </div>
@@ -691,24 +693,24 @@
             <!-- mobile: snap carousel -->
             <div class="carousel" aria-label="App screenshots">
                 <figure class="car-item">
-                    <img src="shots/01_hero.png" alt="Ghost Beat player with jog wheel and beat pads">
+                    <img width="1320" height="2868" src="shots/v3/01-player.png" alt="Ghost Beat player with jog wheel and beat pads">
                     <figcaption><b>The player</b><span>Jog wheel, 20–300 BPM, on/off bars, live beat pads.</span></figcaption>
                 </figure>
                 <figure class="car-item">
-                    <img src="shots/02_ghost_bars.png" alt="Ghost Beat during a silent bar" loading="lazy">
+                    <img width="1320" height="2868" src="shots/v3/07-ghost-bars.png" alt="Ghost Beat during a silent bar" loading="lazy">
                     <figcaption><b>Ghost bars</b><span>The click drops out. The tempo is yours to lose.</span></figcaption>
                 </figure>
                 <figure class="car-item">
-                    <img src="shots/03_timing.png" alt="Timing summary with A grade" loading="lazy">
+                    <img width="1320" height="2868" src="shots/v3/08-timing.png" alt="Ghost Beat v3 tap accuracy calibration" loading="lazy">
                     <figcaption><b>Tap accuracy</b><span>Graded S–D, measured in milliseconds.</span></figcaption>
                 </figure>
                 <figure class="car-item">
-                    <img src="shots/05_routines.png" alt="Practice routines" loading="lazy">
+                    <img width="1320" height="2868" src="shots/v3/04-routines.png" alt="Practice routines" loading="lazy">
                     <figcaption><b>Routines</b><span>Chained exercises that auto-advance.</span></figcaption>
                 </figure>
                 <figure class="car-item">
-                    <img src="shots/04_stats.png" alt="Practice stats" loading="lazy">
-                    <figcaption><b>Progress</b><span>Streaks, charts, grades — all on-device.</span></figcaption>
+                    <img width="1320" height="2868" src="shots/v3/05-home.png" alt="Ghost Beat v3 home with daily goals and weekly practice" loading="lazy">
+                    <figcaption><b>Progress</b><span>Daily goals, weekly practice, and streaks.</span></figcaption>
                 </figure>
             </div>
         </div>
@@ -782,9 +784,9 @@
     <!-- ============ CTA ============ -->
     <section class="cta-sec" id="download">
         <div class="rings" aria-hidden="true"><div class="ring"></div><div class="ring"></div><div class="ring"></div><div class="ring"></div></div>
-        <img src="icon.png" alt="Ghost Beat app icon" class="cta-icon rv" width="108" height="108">
+        <img src="icon.png?v=3" alt="Ghost Beat app icon" class="cta-icon rv" width="108" height="108">
         <h2 class="rv rv-d1">Stop renting your tempo.</h2>
-        <p class="sub rv rv-d2">Free to download. Pro is a one-time $4.99 — no subscription, ever. No account, no ads, no data leaving your phone.</p>
+        <p class="sub rv rv-d2">Free to download. Pro is a one-time $4.99 — no subscription, ever. No Ghost Beat account. No ads. See our privacy policy for data and sync details.</p>
         <a class="store-badge rv rv-d3" href="https://apps.apple.com/us/app/ghost-beat-timing-trainer/id6760374042" aria-label="Download Ghost Beat on the App Store">
             <svg viewBox="0 0 200 60" role="img" aria-hidden="true">
                 <rect x="1" y="1" width="198" height="58" rx="12" fill="#000" stroke="rgba(255,255,255,0.5)" stroke-width="1.5"/>
@@ -807,7 +809,7 @@
             <a href="https://apps.apple.com/us/app/ghost-beat-timing-trainer/id6760374042">App Store</a>
         </div>
         <p>Ghost Beat © 2026 Swayyy</p>
-        <p class="privacy-line">NO ANALYTICS · NO ADS · EVERYTHING STAYS ON YOUR DEVICE</p>
+        <p class="privacy-line">NO ADS · NO ADVERTISING TRACKING · YOUR PLAYING STAYS YOURS</p>
     </footer>
 
     <script>
