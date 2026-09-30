@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ghost Beat: The Metronome That Disappears</title>
-    <meta name="description" content="Ghost Beat is a timing trainer and rhythm practice app for drummers and musicians. Ghost bars cycle between audible and silent so you build a rock-solid internal clock. Free on iPhone & iPad. No ads, no subscription.">
+    <meta name="description" content="Ghost Beat is a timing trainer and rhythm practice app for drummers and musicians. Ghost bars cycle between audible and silent so you build a rock-solid internal clock. Free on iPhone, iPad & Mac. No ads, no subscription.">
     <meta name="keywords" content="metronome app, timing trainer, drummer timing trainer, rhythm practice app, practice with metronome, improve rhythm, metronome trainer, ghost beat, drum practice, internal timing, iOS metronome, ghost bars, tap accuracy, practice tracker">
     <meta name="author" content="Swayyy">
     <meta name="robots" content="index, follow">
@@ -14,7 +14,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png?v=3">
 
     <meta property="og:title" content="Ghost Beat: The Metronome That Disappears">
-    <meta property="og:description" content="Ghost bars force you to keep time without the click. Train your internal clock on iPhone & iPad.">
+    <meta property="og:description" content="Ghost bars force you to keep time without the click. Train your internal clock on iPhone, iPad & Mac.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://ghostbeat.cc/">
     <meta property="og:image" content="https://ghostbeat.cc/icon.png?v=3">
@@ -22,7 +22,7 @@
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Ghost Beat: The Metronome That Disappears">
-    <meta name="twitter:description" content="Ghost bars force you to keep time without the click. Train your internal clock on iPhone & iPad.">
+    <meta name="twitter:description" content="Ghost bars force you to keep time without the click. Train your internal clock on iPhone, iPad & Mac.">
     <meta name="twitter:image" content="https://ghostbeat.cc/icon.png?v=3">
     <meta name="theme-color" content="#0a0a0a">
 
@@ -33,12 +33,12 @@
         "name": "Ghost Beat",
         "url": "https://ghostbeat.cc/",
         "applicationCategory": "MusicApplication",
-        "operatingSystem": "iOS",
-        "description": "Ghost Beat is a timing trainer that cycles between audible and silent bars, training your internal clock. Features ghost bars, tap accuracy grading, practice routines, daily challenges, and detailed stats.",
+        "operatingSystem": "iOS, iPadOS, macOS",
+        "description": "Ghost Beat is a timing trainer that cycles between audible and silent bars, training your internal clock. Features ghost bars, tempo ladders, counting voices, hands-free starts, practice routines, daily goals, and optional private iCloud sync.",
         "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
         "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5.0", "ratingCount": "5" },
         "author": { "@type": "Person", "name": "Swayyy" },
-        "softwareVersion": "2.0",
+        "softwareVersion": "3.0",
         "datePublished": "2026-03"
     }
     </script>
@@ -112,6 +112,7 @@
 
         /* ---------- hero ---------- */
         .hero {
+            overflow: clip;
             min-height: 100svh;
             display: flex; flex-direction: column;
             align-items: center; justify-content: center;
@@ -600,7 +601,7 @@
             <span class="trust-dot">·</span>
             <span class="trust-item">NO SUBSCRIPTION</span>
         </div>
-        <p class="fine">FREE · PRO IS A ONE-TIME $4.99 · IPHONE &amp; IPAD</p>
+        <p class="fine">FREE · PRO IS A ONE-TIME $4.99 · IPHONE · IPAD · MAC</p>
 
         <div class="scroll-cue" aria-hidden="true"></div>
     </section>
@@ -641,7 +642,7 @@
     <section class="showcase" id="app">
         <div class="wrap">
             <div class="rv" style="margin-bottom: 30px;">
-                <div class="eyebrow">Inside the app</div>
+                <div class="eyebrow">Inside Ghost Beat 3</div>
                 <h2>A precision instrument,<br>not another metronome skin.</h2>
             </div>
 
@@ -654,6 +655,9 @@
                         <img width="1320" height="2868" src="shots/v3/08-timing.png" alt="Ghost Beat v3 tap accuracy calibration in the player" data-shot="2" loading="lazy">
                         <img width="1320" height="2868" src="shots/v3/04-routines.png" alt="Practice routines list with BPM steps per routine" data-shot="3" loading="lazy">
                         <img width="1320" height="2868" src="shots/v3/05-home.png" alt="Ghost Beat v3 home with weekly practice, a daily goal, and a seven-day streak" data-shot="4" loading="lazy">
+                        <img width="1320" height="2868" src="shots/v3/03-ladder.png" alt="Tempo ladder settings with start BPM, target BPM, and bars between changes" data-shot="5" loading="lazy">
+                        <img width="1320" height="2868" src="shots/v3/02-sound.png" alt="Sound controls with click and counting voice toggles and separate volumes" data-shot="6" loading="lazy">
+                        <img width="1320" height="2868" src="shots/v3/06-editor.png" alt="Routine editor with duration, time signature, note value, and accent controls" data-shot="7" loading="lazy">
                     </div>
                 </div>
                 <div class="show-steps" id="showSteps">
@@ -661,7 +665,7 @@
                         <div class="eyebrow">The player</div>
                         <h3>Dial it in with the jog wheel.</h3>
                         <p>20–300 BPM on a proper rotary wheel. Set ON bars and OFF bars, pick your time signature and subdivision, and hit play. The pads track every beat in real time.</p>
-                        <span class="chip">20–300 BPM · 6 time signatures</span>
+                        <span class="chip">20–300 BPM · 8 time signatures</span>
                     </div>
                     <div class="show-step" data-shot="1">
                         <div class="eyebrow">Ghost bars</div>
@@ -678,7 +682,7 @@
                     <div class="show-step" data-shot="3">
                         <div class="eyebrow">Routines</div>
                         <h3>Practice that runs itself.</h3>
-                        <p>Chain exercises into timed sessions with BPM, ghost pattern and time signature per step. Speed builders, ghost-mode ladders, daily warm-ups. Press start once.</p>
+                        <p>Build warm-ups and workouts with timed or bar-based steps. Give each step its own tempo, ghost pattern, time signature, and accents. Loop the routine and press start once.</p>
                         <span class="chip">auto-advancing steps</span>
                     </div>
                     <div class="show-step" data-shot="4">
@@ -687,11 +691,29 @@
                         <p>See your daily goal, weekly practice and streak in one place. Pick up your last session or take on today’s challenge.</p>
                         <span class="chip">Daily goals · weekly practice · streaks</span>
                     </div>
+                    <div class="show-step" data-shot="5">
+                        <div class="eyebrow">Tempo ladders</div>
+                        <h3>Build speed, step by step.</h3>
+                        <p>Pick a start and target tempo, how much to change, and how many bars to play between changes. Save it in a preset and let the player handle the tempo.</p>
+                        <span class="chip">Included free · player + presets</span>
+                    </div>
+                    <div class="show-step" data-shot="6">
+                        <div class="eyebrow">Click + counting voice</div>
+                        <h3>Your click. Your sound.</h3>
+                        <p>Play a click, spoken counts, or both. Mix their volumes separately and choose a Natural, Low, or Bright voice. Bar-based count-ins give you time to get ready.</p>
+                        <span class="chip">Separate click + voice controls</span>
+                    </div>
+                    <div class="show-step" data-shot="7">
+                        <div class="eyebrow">Routine builder</div>
+                        <h3>Every step, your way.</h3>
+                        <p>Build one step at a time. Set its length, tempo, note value, and accents, then move to the next. Keep the flow going with routine-specific sound and count-in settings.</p>
+                        <span class="chip">Timed or bar-based steps · custom accents</span>
+                    </div>
                 </div>
             </div>
 
             <!-- mobile: snap carousel -->
-            <div class="carousel" aria-label="App screenshots">
+            <div class="carousel" tabindex="0" role="region" aria-label="Ghost Beat 3 screenshots. Scroll horizontally to explore eight screens.">
                 <figure class="car-item">
                     <img width="1320" height="2868" src="shots/v3/01-player.png" alt="Ghost Beat player with jog wheel and beat pads">
                     <figcaption><b>The player</b><span>Jog wheel, 20–300 BPM, on/off bars, live beat pads.</span></figcaption>
@@ -712,6 +734,18 @@
                     <img width="1320" height="2868" src="shots/v3/05-home.png" alt="Ghost Beat v3 home with daily goals and weekly practice" loading="lazy">
                     <figcaption><b>Progress</b><span>Daily goals, weekly practice, and streaks.</span></figcaption>
                 </figure>
+                <figure class="car-item">
+                    <img width="1320" height="2868" src="shots/v3/03-ladder.png" alt="Tempo ladder settings with start BPM, target BPM, and bars between changes" loading="lazy">
+                    <figcaption><b>Tempo ladders</b><span>Included free · player + presets.</span></figcaption>
+                </figure>
+                <figure class="car-item">
+                    <img width="1320" height="2868" src="shots/v3/02-sound.png" alt="Sound controls with click and counting voice toggles and separate volumes" loading="lazy">
+                    <figcaption><b>Click + counting voice</b><span>Separate click + voice controls.</span></figcaption>
+                </figure>
+                <figure class="car-item">
+                    <img width="1320" height="2868" src="shots/v3/06-editor.png" alt="Routine editor with duration, time signature, note value, and accent controls" loading="lazy">
+                    <figcaption><b>Routine builder</b><span>Timed or bar-based steps · custom accents.</span></figcaption>
+                </figure>
             </div>
         </div>
     </section>
@@ -730,9 +764,18 @@
                 <div class="feat rv rv-d3"><div class="glyph">📋</div><h3>Practice Routines</h3><p>Practice that runs itself. Chain exercises with BPM, ghost pattern, and time signature per step. Press play once.</p></div>
                 <div class="feat rv"><div class="glyph">🏆</div><h3>Daily Challenges</h3><p>Stay sharp with a new timing challenge every day. Survive ghost bars, hit accuracy targets, or hold tempo for a set time.</p></div>
                 <div class="feat rv rv-d1"><div class="glyph">📊</div><h3>Practice Stats</h3><p>Watch yourself get better. Streaks, session history, timing grades, and weekly charts show progress in timing terms, not just minutes.</p></div>
-                <div class="feat rv rv-d2"><div class="glyph">📉</div><h3>Progressive Difficulty<span class="pro-tag">PRO</span></h3><p>Work up to playing in total silence. Beats fade out over bars until the safety net is completely gone.</p></div>
-                <div class="feat rv rv-d3"><div class="glyph">🎛️</div><h3>Deep Customization</h3><p>Make it fit your practice: 6 time signatures, 7 subdivisions (down to 1/32T), 4 click sounds, accents, pitch, count-ins, haptics.</p></div>
+                <div class="feat rv rv-d2"><div class="glyph">📉</div><h3>Progressive Fade<span class="pro-tag">PRO</span></h3><p>Work up to playing in total silence. Beats fade out over bars until the safety net is completely gone.</p></div>
+                <div class="feat rv rv-d3"><div class="glyph">🎛️</div><h3>Deep Customization</h3><p>Pick your time signature, note value, accents, click sound, bar-based count-in, and haptics. Pro adds adjustable click pitch.</p></div>
+                <div class="feat rv"><div class="glyph" aria-hidden="true">↗</div><h3>Tempo Ladders</h3><p>Build toward a target tempo automatically, with a change every few bars. Available free on the player and in presets.</p></div>
+                <div class="feat rv"><div class="glyph" aria-hidden="true">🎙️</div><h3>Start Hands-Free</h3><p>Press and hold Start to listen, then play to begin. Calibrate sensitivity for your kit and room, with optional stopping after silence.</p></div>
+                <div class="feat rv"><div class="glyph" aria-hidden="true">🥁</div><h3>Count Your Practice</h3><p>Track playing with the app open and active, even without the click. Use your microphone, a connected audio input, or a MIDI kit. Audio stays on your device.</p></div>
+                <div class="feat rv"><div class="glyph" aria-hidden="true">◎</div><h3>Daily Goals</h3><p>Fill your practice ring, see weekly totals, and get an optional notification when you reach your daily goal.</p></div>
+                <div class="feat rv"><div class="glyph" aria-hidden="true">☁️</div><h3>Private iCloud Sync</h3><p>Keep routines, presets, practice history, goals, and saved notes together on iPhone, iPad, and Mac. Optional, using the same Apple Account.</p></div>
+                <div class="feat rv"><div class="glyph" aria-hidden="true">🎧</div><h3>Counting Voices</h3><p>Hear the count alongside your click. Choose Natural, Low, or Bright, with separate volumes for the click and voice.</p></div>
+                <div class="feat rv"><div class="glyph" aria-hidden="true">✎</div><h3>Practice Notes<span class="pro-tag">PRO</span></h3><p>Save reminders, sticking ideas, and what to work on next right on your routines and presets.</p></div>
+                <div class="feat rv"><div class="glyph" aria-hidden="true">∞</div><h3>Room to Grow<span class="pro-tag">PRO</span></h3><p>Unlock unlimited routines, steps, and presets, plus click pitch, progressive fade, extended stats, and practice notes. One purchase, no subscription.</p></div>
             </div>
+            <p class="sub rv">Start free with 4 routines, 6 steps per routine, and 3 presets. Ghost bars, Random Mute, tempo ladders, and daily goals are included. <a href="privacy.html" style="color:var(--gold)">Privacy details</a> cover optional iCloud sync and app-session analytics.</p>
         </div>
     </section>
 
@@ -756,26 +799,26 @@
         <div class="ticker">
             <div class="tick-group">
                 <span class="tick-item"><b>20–300</b> BPM</span><span class="tick-dot">◆</span>
-                <span class="tick-item"><b>6</b> TIME SIGNATURES</span><span class="tick-dot">◆</span>
+                <span class="tick-item"><b>8</b> TIME SIGNATURES</span><span class="tick-dot">◆</span>
                 <span class="tick-item">1/4 → <b>1/32T</b> SUBDIVISIONS</span><span class="tick-dot">◆</span>
                 <span class="tick-item"><b>4</b> CLICK SOUNDS</span><span class="tick-dot">◆</span>
                 <span class="tick-item">BACKGROUND AUDIO</span><span class="tick-dot">◆</span>
-                <span class="tick-item"><b>100%</b> ON-DEVICE</span><span class="tick-dot">◆</span>
-                <span class="tick-item">NO ACCOUNTS</span><span class="tick-dot">◆</span>
-                <span class="tick-item">NO TRACKING</span><span class="tick-dot">◆</span>
-                <span class="tick-item">IPHONE &amp; IPAD</span><span class="tick-dot">◆</span>
+                <span class="tick-item">ON-DEVICE AUDIO</span><span class="tick-dot">◆</span>
+                <span class="tick-item">NO GHOST BEAT ACCOUNT</span><span class="tick-dot">◆</span>
+                <span class="tick-item">NO AD TRACKING</span><span class="tick-dot">◆</span>
+                <span class="tick-item">IPHONE · IPAD · MAC</span><span class="tick-dot">◆</span>
                 <span class="tick-item">FREE · PRO <b>$4.99</b> ONE-TIME</span><span class="tick-dot">◆</span>
             </div>
             <div class="tick-group">
                 <span class="tick-item"><b>20–300</b> BPM</span><span class="tick-dot">◆</span>
-                <span class="tick-item"><b>6</b> TIME SIGNATURES</span><span class="tick-dot">◆</span>
+                <span class="tick-item"><b>8</b> TIME SIGNATURES</span><span class="tick-dot">◆</span>
                 <span class="tick-item">1/4 → <b>1/32T</b> SUBDIVISIONS</span><span class="tick-dot">◆</span>
                 <span class="tick-item"><b>4</b> CLICK SOUNDS</span><span class="tick-dot">◆</span>
                 <span class="tick-item">BACKGROUND AUDIO</span><span class="tick-dot">◆</span>
-                <span class="tick-item"><b>100%</b> ON-DEVICE</span><span class="tick-dot">◆</span>
-                <span class="tick-item">NO ACCOUNTS</span><span class="tick-dot">◆</span>
-                <span class="tick-item">NO TRACKING</span><span class="tick-dot">◆</span>
-                <span class="tick-item">IPHONE &amp; IPAD</span><span class="tick-dot">◆</span>
+                <span class="tick-item">ON-DEVICE AUDIO</span><span class="tick-dot">◆</span>
+                <span class="tick-item">NO GHOST BEAT ACCOUNT</span><span class="tick-dot">◆</span>
+                <span class="tick-item">NO AD TRACKING</span><span class="tick-dot">◆</span>
+                <span class="tick-item">IPHONE · IPAD · MAC</span><span class="tick-dot">◆</span>
                 <span class="tick-item">FREE · PRO <b>$4.99</b> ONE-TIME</span><span class="tick-dot">◆</span>
             </div>
         </div>
@@ -797,7 +840,7 @@
                 <text x="58" y="45" fill="#fff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="19" font-weight="600">App Store</text>
             </svg>
         </a>
-        <p class="fine">VERSION 2.0 · IOS</p>
+        <p class="fine">VERSION 3.0 · IPHONE · IPAD · MAC</p>
     </section>
 
     </main>
